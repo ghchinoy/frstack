@@ -9,7 +9,8 @@ jenkins: " https://builds.forgerock.org/view"
 # DJ
 # Where we can grab nightly builds
 opendj_jenkins_url: "{{jenkins}}/OpenDJ/job/OpenDJ%20-%20trunk%20-%20nightly/lastSuccessfulBuild/artifact/build/package"
-opendj_major: "OpenDJ-2.7.0" 
+#opendj_major: "OpenDJ-2.7.0" 
+opendj_major: "OpenDJ-3.0.0"
 opendj_zip: "{{opendj_major}}-{{ansible_date_time.year}}{{ansible_date_time.month}}{{ansible_date_time.day }}.zip"
 opendj_download_url: "{{opendj_jenkins_url}}/{{opendj_zip}}"
 
